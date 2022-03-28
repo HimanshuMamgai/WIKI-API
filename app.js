@@ -83,7 +83,7 @@ app.route("/articles/:articleTitle")
 })
 
 .patch(function(req, res) {
-    Article.update(
+    Article.updateOne(
         {title: req.params.articleTitle},
         {$set: req.body},
         function(err) {
