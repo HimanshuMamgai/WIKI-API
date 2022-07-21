@@ -1,9 +1,4 @@
 {
-  "dependencies": {
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "mongoose": "^6.4.6"
-  },
   "name": "wiki-api",
   "version": "1.0.0",
   "main": "app.js",
@@ -21,5 +16,13 @@
     "url": "https://github.com/HimanshuMamgai/WIKI-API/issues"
   },
   "homepage": "https://github.com/HimanshuMamgai/WIKI-API#readme",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "16.14.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6"
+  }
 }
