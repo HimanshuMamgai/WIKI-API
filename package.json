@@ -18,7 +18,8 @@
   "homepage": "https://github.com/HimanshuMamgai/WIKI-API#readme",
   "description": "",
   "engines": {
-    "node": "16.14.0"
+    "node": "16.14.0",
+    "npm": "8.3.1"
   },
   "dependencies": {
     "dotenv": "^16.0.1",

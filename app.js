@@ -10,6 +10,12 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.DB_URL, {useUnifiedTopology: true, useNewUrlParser : true});
 
+const db = mongoose.connection;
+
+db.on("err", err => console.log(err.message));
+
+db.once("connected", connected => console.log('Conncted to database'));
+
 const articleSchema = {
     title : String,
     content : String
