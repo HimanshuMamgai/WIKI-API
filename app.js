@@ -14,7 +14,7 @@ const db = mongoose.connection;
 
 db.on("err", err => console.log(err.message));
 
-db.once("connected", connected => console.log('Conncted to database'));
+db.once("connected", connected => console.log('Connected to database'));
 
 const articleSchema = {
     title : String,
@@ -112,7 +112,7 @@ app.route("/articles/:articleTitle")
     );
 });
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, function() {
     console.log("Server is running on port " + port);
