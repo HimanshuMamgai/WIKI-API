@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended : true}));
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.DB_URL, {useNewUrlParser : true});
+mongoose.connect(process.env.DB_URL, {useUnifiedTopology: true, useNewUrlParser : true});
 
 const articleSchema = {
     title : String,
