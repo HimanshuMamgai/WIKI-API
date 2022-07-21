@@ -16,10 +16,10 @@ db.on("err", err => console.log(err.message));
 
 db.once("connected", connected => console.log('Connected to database'));
 
-const articleSchema = {
+const articleSchema = new mongoose.Schema({
     title : String,
     content : String
-};
+});
 
 const Article = mongoose.model("Article", articleSchema);
 
